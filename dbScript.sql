@@ -34,6 +34,8 @@ CREATE TABLE `oauth_client_details` (
   PRIMARY KEY  (`client_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+INSERT INTO `oauth_client_details` (`client_id`,`resource_ids`,`client_secret`,`scope`,`authorized_grant_types`,`web_server_redirect_uri`,`authorities`,`access_token_validity`,`refresh_token_validity`,`additional_information`,`autoapprove`) VALUES 
+ ('test','test123','123456789','read,write,trust','password,authorization_code,refresh_token,implicit',NULL,NULL,600,600,'{}','READ');
 
 CREATE TABLE `oauth_client_token` (
   `token_id` varchar(255) default NULL,
