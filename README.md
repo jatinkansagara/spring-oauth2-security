@@ -22,7 +22,7 @@ Response : Generate token, refresh token, expired
 # Greeting API
 POST - http://localhost:8080/springOauth2/greeting
 set Header
-	"Authorization":"Bearer <generated token>"
+	"Authorization":"Bearer #generated token#"
 	
 Response:
 Get Greeting message
